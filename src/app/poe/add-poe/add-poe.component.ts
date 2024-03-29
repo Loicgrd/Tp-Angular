@@ -45,9 +45,9 @@ ngOnInit(): void { //méthode appliqué a tous les composants et est executer im
 onSubmit(): void{ //onSubmit : Lorsque la soumission du formulaire arrivera
   this._poeService.add(this.poeForm.value) //Ajout du service d'ajout de nom dans le tableau
     .subscribe((intern: Poe)=> {
-      this._router.navigate(['/home'])
+      this._router.navigate(['/poe-home'])
     })
-  this._router.navigate(['/home']) //pour revenir vers home quand on ajoute quelqu'un a la liste
+  this._router.navigate(['/poe-home']) //pour revenir vers home quand on ajoute quelqu'un a la liste
   }
 
 }

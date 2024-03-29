@@ -1,5 +1,23 @@
 <h1>Liste des POE</h1>
 
+<table>
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Nom de la POE</th>
+            <th>Durée (heures)</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let poe of poes">
+            <td>&nbsp;</td>
+            <td>{{poe.poename}}</td>
+            <td>{{poe.poeduration}}</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
 
 
 <button onclick="window.location.href = '/poe-home-add';">Ajouter des POE</button>
