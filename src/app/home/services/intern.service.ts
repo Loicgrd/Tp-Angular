@@ -22,7 +22,7 @@ export class InternService implements IService<Intern> { //on spécialise le typ
     },
   ]
   constructor(
-    private _httpClient: HttpClient //
+    private _httpClient: HttpClient //  
   ) { }
 
   findAll(): Observable<Intern[]> { //L'observable va capter quand changement de valeur et envoyer à un souscripteur (ici il observe le tableau d'intern) l'observable est un objet
