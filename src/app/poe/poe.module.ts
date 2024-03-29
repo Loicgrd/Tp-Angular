@@ -1,19 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './poe/home/home.component';
 import { PoeHomeComponent } from './poe-home/poe-home.component';
 import { AddPoeComponent } from './add-poe/add-poe.component';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     PoeHomeComponent,
-    AddPoeComponent
+    AddPoeComponent,
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ]
 })
 export class PoeModule { }

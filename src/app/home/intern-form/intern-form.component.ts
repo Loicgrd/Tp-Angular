@@ -8,7 +8,7 @@ import { Intern } from '../types/intern.type';
   selector: 'app-intern-form',
   templateUrl: './intern-form.component.html',
   styleUrl: './intern-form.component.scss'
-})
+})  
 export class InternFormComponent {
   public internForm: FormGroup = new FormGroup({}) //FormGRoup permet de manipuler le formulaire dans son ensemble
 
