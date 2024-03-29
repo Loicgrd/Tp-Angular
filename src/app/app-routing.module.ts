@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { InternFormComponent } from './home/intern-form/intern-form.component';
 import { PoeHomeComponent } from './poe/poe-home/poe-home.component';
 import { PoeModule } from './poe/poe.module';
+import { AddPoeComponent } from './poe/add-poe/add-poe.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,12 @@ const routes: Routes = [
   {
     path: 'poe-home',
     component: PoeHomeComponent,
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'poe-home-add',
+    component: AddPoeComponent,
     pathMatch: 'full'
   }
 

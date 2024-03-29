@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { PoeService } from '../services/poe.service';
 
 @Component({
   selector: 'app-add-poe',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AddPoeComponent {
 
+
+  constructor(
+    private _router: Router
+  ){}
 }
