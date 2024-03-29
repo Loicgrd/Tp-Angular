@@ -1,0 +1,28 @@
+<form [formGroup] = "internForm" (ngSubmit)="onSubmit()"> <!--ajouter les évenement () et les  -->
+    <legend>Ajouter un stagiaire</legend>
+    <fieldset> 
+    <div class="form-field">
+        <input type="text" formControlName="lastname" placeholder="Votre nom ...">
+        <div *ngIf="internForm.controls['lastname'].errors && internForm.controls['lastname'].touched">
+            <span *ngIf="internForm.controls['lastname'].hasError('required')">
+                Le nom ne peut pas être vide
+            </span>
+
+            <span *ngIf="internForm.controls['lastname'].hasError('minlength')">
+                Le nombre de caractere est insuffisant pour le nom
+            </span>            
+        </div> <!--  controle de formulaire ngIf : si c'est vrai / touched : controle activé une fois -->
+    </div>
+    <div class="form-field">
+        <input type="text" formControlName="firstname" placeholder="Votre prénom ...">
+        <div *ngIf="internForm.controls['firstname'].errors && internForm.controls['firstname'].touched">
+            Le prénom de peut pas être vide
+        </div>
+    </div>
+    </fieldset>
+    <div class="form-field">
+        <button [disabled] ="internForm.invalid"  type="submit">Ajouter</button>
+    </div>
+</form>
+
+{{internForm.value | json}}

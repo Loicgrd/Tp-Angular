@@ -1,0 +1,32 @@
+{
+  "interns": [
+    {
+      "lastname": "Gormand",
+      "firstname": "Loic"
+    },
+    {
+      "lastname": "olastname",
+      "firstname": "ofirstname"
+    },
+    {
+      "id": "4f16",
+      "lastname": "sqD",
+      "firstname": "QSsQ"
+    },
+    {
+      "id": "56d6",
+      "lastname": "aab",
+      "firstname": "aab"
+    }
+  ],
+  "interns2": [
+    {
+      "lastname": "Gormand2",
+      "firstname": "Loic2"
+    },
+    {
+      "lastname": "olastname2",
+      "firstname": "ofirstname22"
+    }
+  ]
+}
