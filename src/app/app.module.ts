@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { PoeModule } from './poe/poe.module';
 import { PoeHomeComponent } from './poe/poe-home/poe-home.component';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PoeHomeComponent } from './poe/poe-home/poe-home.component';
     HomeModule,
     AppRoutingModule,
     PoeModule, //Ajout du module POE
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

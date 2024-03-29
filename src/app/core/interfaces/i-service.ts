@@ -1,5 +1,11 @@
 import { Observable } from "rxjs"
 
+
+export interface Poe {
+    poename: string;
+    poeduration: number;
+    }
+
 /**
  * @interface IService
  * Define methods to be implemented in services crud class
@@ -13,6 +19,7 @@ export interface IService <T> { //une interface est un contrat qui permet d'enca
      * @return void
      */
     add(item: T): void // <T> : accepter un item de type T générique (on peut passer qu'un type déclaré au préalable) 
+
 
 
     /**

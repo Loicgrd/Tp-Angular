@@ -2,11 +2,13 @@
   "interns": [
     {
       "lastname": "Gormand",
-      "firstname": "Loic"
+      "firstname": "Loic",
+      "id": "bb33"
     },
     {
       "lastname": "olastname",
-      "firstname": "ofirstname"
+      "firstname": "ofirstname",
+      "id": "127e"
     },
     {
       "id": "4f16",
@@ -19,14 +21,21 @@
       "firstname": "aab"
     }
   ],
-  "interns2": [
+  "poes": [
     {
-      "lastname": "Gormand2",
-      "firstname": "Loic2"
+      "poename": "Cybersecurité",
+      "poeduration": 400,
+      "id": "1078"
     },
     {
-      "lastname": "olastname2",
-      "firstname": "ofirstname22"
+      "id": "d953",
+      "poename": "gsdgffdg",
+      "poeduration": "450"
+    },
+    {
+      "id": "9572",
+      "poename": "gfdg",
+      "poeduration": "4544"
     }
   ]
 }
