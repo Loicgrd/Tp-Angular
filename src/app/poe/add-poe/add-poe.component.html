@@ -1,1 +1,36 @@
-<p>poe-home-add works!</p>
+<h1>Ajouter les POE ici</h1>
+
+
+<form [formGroup] = "poeForm" (ngSubmit)="onSubmit()"> <!--ajouter les évenement () et les  -->
+    <legend>Ajouter un poe</legend>
+    <fieldset> 
+    <div class="form-field">
+        <input type="text" formControlName="poename" placeholder="Nom de la POE">
+        <div *ngIf="poeForm.controls['poename'].errors && poeForm.controls['poename'].touched">
+            <span *ngIf="poeForm.controls['poename'].hasError('required')">
+                Le nom ne peut pas être vide
+            </span>
+            <span *ngIf="poeForm.controls['poename'].hasError('minlength')">
+                Le nombre de caractere est insuffisant pour le nom
+            </span>            
+        </div> <!--  controle de formulaire ngIf : si c'est vrai / touched : controle activé une fois -->
+    </div>
+    <div class="form-field">
+        <input type="text" formControlName="poeduration" placeholder="Durée du POE (heures)">
+        <div *ngIf="poeForm.controls['poeduration'].errors && poeForm.controls['poeduration'].touched">
+            <span *ngIf="poeForm.controls['poeduration'].hasError('required')">
+                Le prénom de peut pas être vide
+            </span>
+            <span *ngIf="poeForm.controls['poeduration'].hasError('min')">
+                Le temps est incorect
+            </span>
+
+        </div>
+    </div>
+    </fieldset>
+    <div class="form-field">
+        <button [disabled] ="poeForm.invalid"  type="submit">Ajouter</button>
+    </div>
+</form>
+
+{{poeForm.value | json}}
